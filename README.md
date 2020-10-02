@@ -277,6 +277,11 @@ String, class name(s).  Default: "glyphicon" as defined by [Bootstrap Glyphicons
 
 Sets the icon to be used on a tree node with no child nodes.
 
+#### enableButtons
+Boolean.  Default: false
+
+Whether or not to display buttons for actions on this node and children noded.
+
 #### enableLinks
 Boolean.  Default: false
 
@@ -356,6 +361,11 @@ Whether or not to display checkboxes on nodes.
 Boolean.  Default: true
 
 Whether or not to display a nodes icon.
+
+#### showGoogle
+Boolean.  Default: true
+
+Whether or not to display Google Category text.
 
 #### showTags
 Boolean.  Default: false
@@ -726,6 +736,10 @@ $('#tree').on('nodeSelected', function(event, data) {
 ```
 
 ### List of Events
+
+`clickThis (event, node)`  - Button "This" is clicked.
+
+`clickChildren (event, node)`  - Button "Children" is clicked.
 
 `nodeChecked (event, node)`  - A node is checked.
 
